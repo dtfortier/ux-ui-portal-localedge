@@ -1,0 +1,254 @@
+/* Custom CSS for the ui-standards pages in the uxui portal
+ *
+ *  
+ */
+
+/* HELPERS */
+
+.important {color:#CE0000;}
+
+#le-dash p.description {margin-bottom:40px;}
+
+/* SECTIONS */ 
+
+#le-dash .section-headings,
+#le-dash .section-paragraphs {padding: 0 30px;}
+#le-dash .section-default {}
+#le-dash .section-default {}
+#le-dash .section-default {}
+
+/* CONTENT */
+p, .p {
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-bottom: .8em;
+    color: #484848;
+}
+
+#le-dash h3.notes {font-weight:bold;}
+#le-dash p span.inner-heading {font-weight:bold;font-size:14px;color: #A5A6A7/*#619CC1*/;text-transform: uppercase;}
+#le-dash p span.inner-heading.important {color:#F16865;}
+
+
+/* IMAGES */
+
+.standards-img {margin:10px}
+
+/* TOP DROPDOWN NAVIGATION */
+
+ul.secondary li.standards-dd { 
+    background: #ccc;
+    border-radius:3px;
+    display: inline-block;
+    outline: 0;
+    margin-top:8px;
+}
+ul.secondary li.standards-dd:hover {
+    transition: background-color 0.23s ease-in-out 0s;
+}
+ul.secondary li.standards-dd a {
+    color: #333;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+.nav ul.secondary > li > a:hover, 
+.nav ul.secondary > li > a:focus {
+    text-decoration: none;
+    transition: background-color 0.23s ease-in-out 0s;
+    background-color:#ccc;
+}
+
+/* FORM ELEMENTS */
+
+h1.sub-category {font-style: italic;}
+
+.btn.horizontal {display:block;margin-bottom:10px;}
+
+/* COLOR PALETTE'S */
+
+#le-dash .square {
+    float: left;
+    position: relative;
+    width: 13%;
+    padding-bottom: 12%;
+    margin: 1.66%;
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+
+#le-dash .square .content {
+    position: absolute;
+    height: 90%; /* = 100% - 2*5% padding */
+    width: 90%; /* = 100% - 2*5% padding */
+    font-family: monospace, monospace;
+    font-size:15px;
+    padding: 5%;
+    color: #fff;
+    text-align: center;
+}
+#le-dash .square .content.dark {color:#333;}
+
+#le-dash .square.alerts{background-color:#E84242/*#FF0000*/;}
+#le-dash .square.blue{background-color:#447DB3}
+#le-dash .square.lt-gray-icons{background-color:#D0CFCF }
+#le-dash .square.dk-gray-icons{background-color:#364049}
+#le-dash .square.orange{background-color:#F79720}
+#le-dash .square.green{background-color:#94CA32}
+#le-dash .square.ltr-gray-headings{background-color:#91a0ad}
+#le-dash .square.bg-lt-gray{background-color:#EDECED}
+#le-dash .square.bg-white{background-color:#FFFFFF; border:1px solid #edeced;color:#000;}
+#le-dash .square.bg-left-nav{background-color:#4C5965}
+#le-dash .square.bg-left-nav-child{background-color:#364049}
+#le-dash .square.bg-left-nav-child-child{background-color:#323538}
+
+/* GRID */
+
+.box {background-color: #DAE6F5;color: #333;padding: 5px 10px;margin: 7px 0;}
+.row.grid {margin: 15px 0;}
+
+/* CONTENT BLOCKS */
+
+#le-dash .block {height: 275px;}
+
+
+/* NAV PILLS */
+ 
+#le-dash .nav-pills > li.active > a:focus {
+    background: none;
+    /*border-bottom: 3px solid #477DB3;*/
+}
+
+#le-dash .nav-pills > li {
+    float: left;
+    padding: 5px 10px;
+    background: #477DB3;
+    border-radius: 4px;
+    margin: 4px;
+}
+#le-dash .nav-pills > li:hover {background-color:#366390;}
+#le-dash .nav-pills > li > a {color:#fff;border-radius: 0;}
+#le-dash .nav-pills > li > a {padding: 0;}
+
+#le-dash .nav-pills > li > a,
+#le-dash .nav-pills > li > a:hover, 
+#le-dash .nav-pills > li > a:focus {background: none;color: #fff;/*border-bottom: 3px solid #477DB3;*/}
+
+
+
+
+/*  LISTS  */
+
+.dotted-list {margin-bottom: .8em}
+.dotted-list>li {line-height: 1.6em;padding: .8em 0 .73333333em 0;border-bottom: 1px dotted #e0e0e0}
+.dotted-list>li>div {padding: 0}
+.dotted-list>li>div>a {display: block}
+.dotted-list>li .feedback-block {padding: inherit}
+.topborder>li:first-child {border-top: 1px dotted #e0e0e0}
+.list-thick {margin-bottom: 1.6em}
+.list-thick>li {padding: 1.6em 0 1.53333333em 0}
+.list-squished>li {padding: .4em 0 .33333333em 0}
+
+/* BUTTONS */
+
+#le-dash .btn-primary,
+#le-dash .btn-standard{margin-right: 11px;}
+
+/*  CODE HELP  */
+
+code {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Source Code Pro", Consolas, "Lucida Console", Courier, monospace;
+    color: #a11;
+    word-spacing: normal;
+    word-wrap: break-word
+}
+code .tag {color: #6dc5dc}
+code .attr {color: #ee836e}
+code .num {
+    opacity: .6;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+pre {
+    display: block;
+    font-size: 14px;
+    line-height: 1.28571429em;
+    font-family: "Source Code Pro", Consolas, "Lucida Console", Courier, monospace;
+    white-space: pre-wrap;
+    padding: 12px 15px;
+    max-width: 635px;
+    border:1px solid #ccc;
+}
+.code, 
+code, {font-family: "Source Code Pro", Consolas, "Lucida Console", Courier, monospace}
+abbr,
+.smallcaps {border-bottom: none;font-variant: small-caps;text-transform: lowercase}
+abbr {
+    cursor: help;
+    font-variant: normal;
+    text-transform: uppercase
+}
+.syntaxhighlighter {border-radius: 4px;padding:11px 0 !important;border: 1px solid #ddd;}
+.syntaxhighlighter .plain {color: #333333 !important;}
+.syntaxhighlighter .keyword {color: #50AB46 !important;}
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {color: #5687FF !important;}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {color: #BF4C4C !important;}
+.syntaxhighlighter table td.gutter {border-right: 1px solid #ddd;background-color: #f7f7f7 !important;}
+.syntaxhighlighter table td.gutter .line {text-align: right !important;padding: 0 0.5em 0 1em !important;color: #999;}
+code.html.comments {color:#929292;}
+
+/* ICONS */
+
+.icons {}
+.icon-box {
+    display: inline-block;
+    margin: 0 24px 36px 0;
+    background-color: #fcfcfc;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    min-width: 140px;
+    max-width: 170px;
+    vertical-align: top;
+}
+.icon-box>p {
+    width: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+    padding: 6px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e8e8e8;
+}
+.icon-box>p:first-child code {color: #959595;}
+.icon-box code {
+    font-size: 14px;
+    line-height: 18px;
+    color: #a11;
+    word-spacing: normal;
+    word-wrap: break-word;
+    background:none;
+}
+.icon-box .fontawesome {
+    font-size: 40px !important;
+    height: 96px;
+    line-height: 96px;
+    padding: 0;
+    background-color: #fff;
+}
+.icon-box .fontawesome:after {
+    font-size: 40px;
+    color: #595959;
+}
+
+#le-dash i.info {color:#3FA9F5;font-size: 22px;}
+#le-dash i.exclamation-circle.rule {color:#a94442;font-size: 22px;}
+
+/*  HELPERS  */
+
+.dim {opacity: .48}
+.nomargin {margin:0 !important;}
+.nopadding {padding:0 !important;}
+.full-width {width: 100%;max-width: 100% !important;}
+.spacer {border-bottom: 1px dashed #b1e0ec;margin:20px 0;}
+
